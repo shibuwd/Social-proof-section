@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+    --very-dark-magenta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+   --light-grayish-magenta: hsl(300, 24%, 96%);
+   --white: hsl(0, 0%, 100%);
+}
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: .94rem;
+    font-weight: 400;
+    background-color: var(--white);
+    color: var(--white);
+    padding: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+
+/* header section */
+
+.bg-pattern-top {
+   margin-bottom: -10rem;
+}
+
+.container {
+    max-width: 450px;
+
+}
+
+.container h1 {
+    font-size:  2.1rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    text-align: center;
+    color: var(--very-dark-magenta);
+    margin-bottom: 1.5rem;
+}
+
+.container p {
+    text-align: center;
+    line-height: 1.6rem;
+    color: var(--dark-grayish-magenta);
+    font-weight: 500;
+    margin-bottom: 3rem;
+}
+
+/* end header section */
+
+/* main section */
+
+ .review  {
+    background-color: var(--light-grayish-magenta);
+    padding: .8rem 0;
+    text-align: center;
+    border-radius: .8rem;
+    margin-bottom: 1.2rem;
+}
+
+.all-stars {
+    width: 140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews .review h2 {
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    padding-top: .9rem;
+    font-size: .9rem;
+}
+
+/* main section */
+
+/* card section */
+
+.card-style {
+    background-color: var(--very-dark-magenta);
+    padding: 2rem 2rem;
+    border-radius: .8rem;
+    margin-bottom: 1.4rem;
+}
+
+.personal-info {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: 1rem;
+}
+
+.personal-info img {
+    border-radius: 50%;
+    transform: scale(.6);
+}
+
+.personal-info h3 {
+    font-size: 1rem;
+    color: var(--white);
+}
+
+.personal-info span {
+    font-size: .8rem;
+    color: var(--soft-pink);
+}
+
+/* end  card section */
+
+.attribution {
+      font-size: 11px;
+      text-align: center;
+      color: var(--very-dark-magenta);
+      margin-top: 2rem;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+      text-decoration: none;
+    }
+
+/* media query */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        padding: 1rem 3rem;
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-right: -17rem;
+    }
+    .reviews {
+         margin-right: -17rem;
+    }
+    .card-container {
+         padding: 1rem 3rem;
+    }
+    }
+
+@media only screen and (min-width: 1100px) {
+    .bg-pattern-top {
+        background: url(./img/bg-pattern-top-desktop.svg);
+        margin-top: -2rem;
+    }
+    .review-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 3rem;
+    }
+    .header-container h1 {
+        text-align: left;
+        font-size: 2.8rem;
+        line-height: 2.7rem;
+    }
+    .header-container p {
+        text-align: left;
+        line-height: 1.3rem;
+        font-size: .77rem;
+    }
+    .review {
+        display: flex;
+        align-items: center;   
+        margin-right: -50rem;
+    }
+    .review:nth-child(1) {
+        margin-right: -42rem;
+    }
+    .review:nth-child(3) {
+        margin-right: -57rem;
+    }
+   .reviews {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+   }
+   .all-stars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .reviews .review h2 {
+    font-weight: 700;
+    color: var(--very-dark-magenta);
+    padding: 0 2rem;
+}
+.card-container {
+    display: flex;
+    padding: 0 3rem;
+    gap: 2rem;
+}
+.card-style {
+    padding: .8rem 2rem;
+    border-radius: .8rem;
+    min-width: 300px; 
+    height: 220px;
+    position: relative;
+    margin-top: 3rem;
+}
+.card-style:nth-child(2) {
+    top: 1rem;
+}
+.card-style:nth-child(3) {
+    top: 2rem;
+}
+.card-container p {
+    font-size: .75rem;
+    line-height: 1.2rem;
+    margin-top: -.8rem;
+    color: var(--light-grayish-magenta);
+}
+.personal-info h3 {
+    font-size: .85rem;
+}
+.personal-info span {
+    font-size: .8rem;
+}
+}
+
+@media only screen and (min-width: 1366px) {
+     .container {
+        padding: 0rem 7rem;
+    }
+     .reviews {
+        margin-right: -48rem;
+    }
+   .card-style {
+    padding: 1rem 3rem;
+    border-radius: .8rem;
+    min-width: 300px; 
+    height: 220px;
+    position: relative;
+    margin-bottom: 4rem;
+}
+.card-style:nth-child(2) {
+    top: 2rem;
+}
+.card-style:nth-child(3) {
+    top: 4rem;
+}
+
+}
+
+@media only screen and (min-width: 1440px) {
+    .container {
+        padding: 0 8rem;
+    }
+     .reviews {
+        margin-right: -58rem;
+    }
+   .card-style {
+    padding: 1.5rem 3rem;
+    border-radius: .8rem;
+    min-width: 340px; 
+    height: 220px;
+    position: relative;
+    margin-top: 3rem;
+  }
+.card-style:nth-child(2) {
+    top: 2rem;
+}
+.card-style:nth-child(3) {
+    top: 4rem;
+}
+.card-container p {
+    font-size: .9rem;
+    line-height: 1.2rem;
+    margin-top: -.8rem;
+}
+}
